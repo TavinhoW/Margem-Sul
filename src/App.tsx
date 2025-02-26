@@ -1,21 +1,21 @@
-import './App.css'
-import Header from "./header.tsx"
-import Footer from "./footer.tsx"
-import Products from "./frontpage/produtos.tsx";
-import Noticias from "./frontpage/noticias.tsx"
-import Trofeus from "./frontpage/info.tsx"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './Header.tsx';  // Ajuste o caminho conforme necessário
+import MatchSchedule from './content/jogos/jogos.tsx';  // Ajuste o caminho conforme necessário
 
-function App() {
+const App = () => {
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                {/* Defina as rotas aqui */}
+                <Route path="/jogos" element={<MatchSchedule />} />
+                {/* Outras rotas */}
+                <Route path="/estadio" element={<div>Estádio</div>} />
+                <Route path="/equipa" element={<div>Equipa</div>} />
+                <Route path="/loja" element={<div>Loja</div>} />
+            </Routes>
+        </Router>
+    );
+};
 
-  return (
-    <>
-      <Header />
-        <Products />
-        <Noticias />
-        <Trofeus />
-        <Footer />
-    </>
-  )
-}
-
-export default App
+export default App;
