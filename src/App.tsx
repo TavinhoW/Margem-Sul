@@ -4,7 +4,7 @@ import Footer from './Footer.tsx';
 import Products from './frontpage/produtos.tsx';
 import Noticias from './frontpage/noticias.tsx';
 import Trofeus from './frontpage/info.tsx';
-import MatchSchedule from './content/jogos/jogos.tsx';
+import MatchSchedule from './content/jogos/page.tsx';
 
 const App = () => {
     return (
