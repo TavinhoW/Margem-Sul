@@ -3,8 +3,8 @@
 
 @layer theme {
   :root, :host {
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-100: oklch(.936 .032 17.717);
     --color-red-200: oklch(.885 .062 18.334);
     --color-red-300: oklch(.808 .114 19.571);
@@ -317,14 +317,6 @@
     grid-column-start: 2;
   }
 
-  .row-start-2 {
-    grid-row-start: 2;
-  }
-
-  .row-start-3 {
-    grid-row-start: 3;
-  }
-
   .\!container {
     width: 100% !important;
   }
@@ -425,10 +417,6 @@
     margin-top: auto;
   }
 
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
-
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -513,10 +501,6 @@
     max-height: calc(var(--spacing) * 30);
   }
 
-  .min-h-screen {
-    min-height: 100vh;
-  }
-
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -565,14 +549,6 @@
     resize: both;
   }
 
-  .list-inside {
-    list-style-position: inside;
-  }
-
-  .list-decimal {
-    list-style-type: decimal;
-  }
-
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -585,10 +561,6 @@
     flex-direction: column;
   }
 
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-
   .items-center {
     align-items: center;
   }
@@ -599,30 +571,6 @@
 
   .justify-center {
     justify-content: center;
-  }
-
-  .justify-items-center {
-    justify-items: center;
-  }
-
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
-
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
-
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
-
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-
-  .gap-16 {
-    gap: calc(var(--spacing) * 16);
   }
 
   :where(.space-y-4 > :not(:last-child)) {
@@ -669,14 +617,6 @@
     row-gap: calc(var(--spacing) * 16);
   }
 
-  .rounded {
-    border-radius: .25rem;
-  }
-
-  .rounded-full {
-    border-radius: 3.40282e38px;
-  }
-
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -695,21 +635,8 @@
     border-bottom-width: 1px;
   }
 
-  .border-solid {
-    --tw-border-style: solid;
-    border-style: solid;
-  }
-
-  .border-black {
-    border-color: var(--color-black);
-  }
-
   .border-gray-300 {
     border-color: var(--color-gray-300);
-  }
-
-  .border-transparent {
-    border-color: #0000;
   }
 
   .bg-black {
@@ -740,16 +667,8 @@
     padding: calc(var(--spacing) * 6);
   }
 
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
-
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
   }
 
   .px-2 {
@@ -766,10 +685,6 @@
 
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
   }
 
   .py-2 {
@@ -794,10 +709,6 @@
 
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
-  }
-
-  .pb-20 {
-    padding-bottom: calc(var(--spacing) * 20);
   }
 
   .text-center {
@@ -950,12 +861,6 @@
 
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-
-  .transition-colors {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -1180,24 +1085,6 @@
       filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
     }
   }
-}
-
-:root {
-  --background: #fff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @property --tw-rotate-x {
