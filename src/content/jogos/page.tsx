@@ -40,6 +40,14 @@ const MatchSchedule = () => {
             awayTeam: 'Lagoa',
             venue: 'Campo da Verderena',
         },
+        {
+            date: '31 de Março',
+            league: 'League Match',
+            time: '20:00',
+            homeTeam: 'Margem Sul',
+            awayTeam: 'Cheios de Fome',
+            venue: 'Campo da Verderena',
+        },
     ];
 
     return (
