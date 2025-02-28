@@ -10,9 +10,14 @@ Second, to install
 
 ```
 npm install
-# or
+```
+or
+
+```
 npm install --force
 ```
+- npm install --force ajuda em muitos projetos se não estiverem a funcionar
+
 
 Then just need to 
 
