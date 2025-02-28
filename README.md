@@ -1,6 +1,12 @@
 ## Margem Sul
 
-First, to install
+First, just git clone ssh
+
+```
+git clone ...(link)
+```
+
+Second, to install
 
 ```
 npm install
