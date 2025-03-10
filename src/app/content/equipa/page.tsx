@@ -68,7 +68,7 @@ const Equipa = () => {
                             <p/>
                         </CardHeader>
                         <CardContent>
-                            <h4 className="text-gray-500 text-sm">SEASON {player.season}</h4>
+                            <h4 className="text-gray-500 text-sm">{player.season}</h4>
                             <table className="w-full mt-2">
                                 <tbody>
                                 <tr>
@@ -102,7 +102,7 @@ const Equipa = () => {
                             </div>
                         </CardHeader>
                         <CardContent>
-                            <h4 className="text-gray-500 text-sm">SEASON {staffMember.season}</h4>
+                            <h4 className="text-gray-500 text-sm">{staffMember.season}</h4>
                             <table className="w-full mt-2">
                                 <tbody>
                                 <tr>
