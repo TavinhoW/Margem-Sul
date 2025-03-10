@@ -15,7 +15,7 @@ const Estadio= () => {
             <Separator />
             <div className="mt-2 my-2 text-lg flex flex-col items-center">
                 <h1 className="text-2xl font-semibold my-2">Sobre os Bilhetes</h1>
-                <p>Os bilhetes são comprados no Estadio</p>
+                <p>Os bilhetes são comprados no Estadio.</p>
                 <p>As crianças menores de 13 anos só poderão visitar o Estádio quando acompanhados por um adulto.</p>
                 <p>Não se efetuam trocas e/ou devoluções.</p>
             </div>
